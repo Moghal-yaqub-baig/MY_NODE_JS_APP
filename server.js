@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path'); // Required for path manipulation
 
 const app = express();
-// const port = 8000;
+const port = process.env.PORT || 8000;
 
 // Define the directory where your static HTML files are located
 // app.use(express.static(path.join(__dirname, 'public'))); 
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   res.write("Welcome! to the future");
   res.end();
 });
-app.listen(8000)
+app.listen(port)
 // app.listen(port, () => {
 //   console.log(`Server running at http://localhost:${port}`);
 // });
