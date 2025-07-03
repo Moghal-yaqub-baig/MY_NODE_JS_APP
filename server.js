@@ -14,7 +14,7 @@ app.get('/yaqub', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.write("Welcome! to the future.");
+  res.write("Welcome! to the future. hello my nme");
   res.end();
 });
 app.listen(port)
